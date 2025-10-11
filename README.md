@@ -13,10 +13,19 @@ Since this script reflects my own workflow it is heavily opinionated.
 
 ## Getting Started
 
+### Install the module
+
+Your Powershell needs to find this module. Therefore it's recommended to checkout this repository in a path that is listed in the PSModulePath environment variable or add the module path to the PSModulePath environment variable value.
+Please refer to the [Microsoft docs](https://learn.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module?view=powershell-7.5) for more help.
+
+### Setup and run
+
 Set the `REPERTOIRE_ROOT` environment variable to the root directory of your repertoire (absolute path). New songs will be added here.
 A preferably recording-ready DAW project will be copied to the new song directory, if you set `DAW_PROJECT_TEMPLATE` env to the templates absolute path.
 
 Once you execute the `Add-Song` command an interactive setup routine will start and handle following steps.
+
+![Terminal output](./doc/terminal_screenshot.jpg)
 
 1. Create folder structure
 2. Copy DAW project template
