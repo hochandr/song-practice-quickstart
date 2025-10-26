@@ -455,7 +455,7 @@ Download audio files...
         # Generate backing track #
         ##########################
 
-        Generate-BackingTrack -AudioFile ".\transcriptions\${root}${fileExt}" -StemSource other -StemMode remove -OutputDir '.\backing-tracks'
+        Generate-BackingTrack -AudioFile ".\transcriptions\${root}${fileExt}" -StemSource other -StemMode remove -CountInDuration 0 -OutputDir '.\backing-tracks'
 
         ###################
         # Success message #
